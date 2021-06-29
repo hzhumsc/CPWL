@@ -1,2 +1,2 @@
 # Project-CPWL
-deliverable for the semester project
+deliverables for the semester project
