@@ -13,3 +13,7 @@ data, l = generate_grid(x_range, y_range, stepsize)
 data.requires_grad_(True)
 ```
 
+Then, we can generate the GHH based on this input.
+```python
+ghh = GHH(data, 2, 3)  # 2 is the input dimension, 3 is the value of K in the GHH representation formula
+```
