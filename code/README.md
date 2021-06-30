@@ -17,3 +17,12 @@ Then, we can generate the GHH based on this input.
 ```python
 ghh = GHH(data, 2, 3)  # 2 is the input dimension, 3 is the value of K in the GHH representation formula
 ```
+And we can conpute the output.
+```python
+output = ghh(data)
+```
+Finally, we can compute the gradient and get the partition of the linear regions.
+```python
+grad_x, grad_y = compute_grad(output, data, l)
+region= get_region_fast(grad_x, grad_y)
+```
