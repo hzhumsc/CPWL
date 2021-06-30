@@ -2,6 +2,8 @@ import torch
 from grid_method import *
 from model import GHH
 
+'''The 4 pre-defined architectures. '''
+
 def arch_1(d, k, l, normalize=False):
     ghh1 = GHH(d,1,k)
     if normalize:
